@@ -1,43 +1,36 @@
-# HistoPlot
+# Clapmojify
 
-Transform an `Array` into an ASCII histogram plot, grouping the elements by any criteria.
+Inject 👏 clap-emoji 👏 into 👏 your 👏 text 👏.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+To install the gem:
 
-```ruby
-gem 'histo_plot'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install histo_plot
+    $ gem install clapmojify
 
 ## Usage
 
-`[1, 1, 2, 2, 2, 3].histo_plot`
-yields
+At the command-line, type `clapmojify <text>` or pipe/redirect output:
+
+    $ clapmojify "quoted text"
+
+yields:
+
 ```
-1: **
-2: ***
-3: *
+quoted 👏 text 👏
 ```
 
-`[1, 1, 1, 1, 2, 2].histo_plot(scale: 2, plot_char: '+') {|n| n.odd?}`
-yields
-```
-true: ++
-false: +
-```
+Alternately:
+
+    $ clapmojify < input_file.txt
+
+or
+
+    $ cat input_file.txt | clapmojify
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/histo_plot/fork )
+1. Fork it ( https://github.com/[my-github-username]/clapmojify/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
