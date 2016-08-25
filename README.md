@@ -12,12 +12,12 @@ To install the gem:
 
 At the command-line, type `clapmojify <text>` or pipe/redirect output:
 
-    $ clapmojify "quoted text"
+    $ clapmojify fix my text
 
 yields:
 
 ```
-quoted 👏 text 👏
+fix 👏 my 👏 text 👏
 ```
 
 Alternately:

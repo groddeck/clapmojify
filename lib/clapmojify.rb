@@ -1,13 +1,13 @@
 require 'clapmojify/version'
 
 module Clapmojify
-  def clapmojify(text)
-    (text || []).map(&:clapmojify)
+  def self.clapmojify(text)
+    (text || []).map(&:clapmojify).join(' ')
   end
 end
 
 class String
   def clapmojify
-    [self, '👏'].join
+    [self, '👏'].join(' ')
   end
 end

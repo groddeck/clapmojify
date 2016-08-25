@@ -5,7 +5,7 @@ require 'clapmojify/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'clapmojify'
-  spec.version       = HistoPlot::VERSION
+  spec.version       = Clapmojify::VERSION
   spec.authors       = ['Theodore Groddeck']
   spec.email         = ['jcrivera@alum.mit.edu']
   spec.summary       = %q{Inject clap-emoji into input text.}
