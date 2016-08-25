@@ -6,6 +6,6 @@ if ARGV.length > 0
   puts Clapmojify.clapmojify(ARGV)
 else
   STDIN.each_line do |line|
-    puts Clapmojify.clapmojify(ARGV)
+    puts Clapmojify.clapmojify((line || []).split)
   end
 end
